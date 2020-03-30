@@ -1,0 +1,74 @@
+
+
+  body {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5vh;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(http://wallpaperspics.com/wallpapers/25/5/uncertainty-wallpapers-awesome-256677.jpg);
+  }
+
+  #container{
+    width:550px;
+    height: 550px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 5px 5px red;
+    border-radius: 21%;
+  }
+  .siteName{
+    font-family:  'Oxanium', bold;
+    box-sizing: border-box;
+    width: 252px;
+    color: #ff3333;
+    font-size: 56px;
+  }
+  .input{
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+    background-color: transparent;
+    width: 290px;
+    height:36px;
+    margin: 0;
+    font-size: 28px;
+  }
+  .input::placeholder{
+      color: red;
+      opacity: 1; /* Firefox */
+    }
+  
+  .btn{
+    position: relative;
+    border: none;
+    width: auto;
+    height: 36px;
+    margin-bottom: 10px;
+    background-image: url("http://wallpaperspics.com/wallpapers/25/5/uncertainty-wallpapers-awesome-256677.jpg");
+    font-size: 28px;
+    color: #fff;
+  }
+  .result{
+    margin-left: 30px;
+  }
+  .userName{
+    font-size: 20px;
+    justify-content: space-between;
+    color: #00FFF3;
+  }
+  .timeOut{
+    font-family: 'Spartan', sans-serif;
+    font-size: 24px;
+    color: #00FFF3;
+  }
+  #result{
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-start;
+    order: inherit;
+    margin-right: 60px;
+  }
