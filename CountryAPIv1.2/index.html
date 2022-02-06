@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Country API V1.2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Let's see the world! :)</h1>
+    <button class="toggle"><i class="far fa-moon moon"></i>Dark Mode</button>
+</div>
+<div class="container">
+    <div class="form-control">
+    <input type="text" placeholder="Search for country" class="search">
+    <i class="fas fa-search search"></i>
+    </div>
+    <div class="dropDownCon">
+        <div class="dropDown">
+        <p>Filter by region</p>
+        <button><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="drop">
+            <p class="region">All</p>
+            <p class="region">Africa</p>
+            <p class="region">America</p>
+            <p class="region">Asia</p>
+            <p class="region">Europe</p>
+            <p class="region">Oceania</p>
+        </div>
+    </div>
+</div>
+<div class="countries"></div>
+<div class="countryModal show">
+    <button class="back">Back</button>
+    <div class="modal">
+        <div class="leftModal">
+            <img src="https://flagcdn.com/ax.svg" alt="">
+        </div>
+        <div class="rightModal">
+            <h1>Germany</h1>
+            <div class="modalInfo">
+                <div class="innerLeft inner">
+                    <p><strong>Native Name: </strong>${data.population}</p>
+                    <p><strong>Population: </strong>${data.region}</p>
+                    <p><strong>Regionl: </strong>${data.capital}</p>    
+                    <p><strong>Sub-region: </strong>${data.capital}</p>              
+                </div>
+                <div class="innerRight">
+                    <p><strong>Capital: </strong>${data.population}</p>
+                    <p><strong>Region: </strong>${data.region}</p>
+                    <p><strong>Currencies: </strong>${data.capital}</p>    
+                    <p><strong>Languages: </strong>${data.capital}</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
